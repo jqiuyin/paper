@@ -5,6 +5,7 @@ Created on 2018年11月8日
 '''
 import main.connectToAccess as source
 import pandas as pd
+import datetime
 
 class CleanData(object):
     def __init__(self):
@@ -55,13 +56,32 @@ class CleanData(object):
             return pd.DataFrame(self.good_two_list)
         elif(type=="good_three"):
             return pd.DataFrame(self.good_three_list)
+    
+    
+    def get_quick_table(self,type):
+        if(type =="bad_one"):
+            return self.table[self.table[3].isin(self.bad_one_label)]
+        elif(type=="bad_two"):
+            return self.table[self.table[3].isin(self.bad_two_label)]
+        elif(type=="bad_three"):
+            return self.table[self.table[3].isin(self.bad_three_label)]
+        elif(type =="good_one"):
+            return self.table[self.table[3].isin(self.good_one_label)]
+        elif(type=="good_two"):
+            return self.table[self.table[3].isin(self.good_two_label)]
+        elif(type=="good_three"):
+            return self.table[self.table[3].isin(self.good_three_label)]
 #print(bad_one_label)
 
 if __name__=='__main__':
+    start=datetime.datetime.now()
     cleanData=CleanData()
-    print(cleanData.get_table("bad_one"))
-    print(cleanData.get_table("bad_two"))
-    print(cleanData.get_table("bad_three"))
-    print(cleanData.get_table("good_one"))
-    print(cleanData.get_table("good_two"))
-    print(cleanData.get_table("good_three"))
+    print(cleanData.get_quick_table("bad_one"))
+    print(cleanData.get_quick_table("bad_two"))
+    print(cleanData.get_quick_table("bad_three"))
+    print(cleanData.get_quick_table("good_one"))
+    print(cleanData.get_quick_table("good_two"))
+    print(cleanData.get_quick_table("good_three"))
+    stop=datetime.datetime.now()
+    delta=stop-start
+    print(delta.seconds)
