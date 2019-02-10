@@ -6,7 +6,7 @@ Created on 2018年12月24日
 import networkx as nx
 
 
-class createGraph(object):
+class CreateGraph(object):
     
     
     def __init__(self,egleList=None):

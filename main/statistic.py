@@ -7,9 +7,9 @@ import networkx as nx
 import pandas as pd
 
 
-class Statistics(object):
+class Statistic(object):
     def __init__(self,graph):
-        G=graph
+        self.G=graph
 
     def getDegreeCentrality(self):
         degreeCentrality=pd.Series(nx.degree_centrality(self.G),name='度中心性').sort_values(ascending=False)
@@ -26,6 +26,3 @@ class Statistics(object):
     def getEigenvectorCentrality(self):
         eigenvectorCentrality=pd.Series(nx.eigenvector_centrality(self.G),name='特征向量中心性').sort_values(ascending=False)
         return eigenvectorCentrality
-    
-
-

@@ -12,10 +12,10 @@ class CleanData(object):
         self.table=source.getData()
         """用于分类的标签"""
         self.bad_one_label="不合,拒絕在Y主政的政府中任職,拒絕在Y的主政期出仕,拒絕會面,欲辟Y為幕僚但被拒絕,拒為Y之黨,拒Y游説".split(",")
-        self.bad_two_label="反對/攻訐,彈劾,反對/不支持Y的政策,排擠,得罪Y,忌/惡,批評,反對Y稱帝,以詩諷忤Y,與Y爭權,其黨攻訐Y,反對赦免,遭Y新法支持者排擠,遭Y蔡京勢力排擠".split(",")
-        self.bad_three_label="陷害Y,其（或追隨者）殺害Y,逮捕,鞫治,建議處決Y,籌劃謀殺,下令處決,處決,逃離Y的統治區,王安石新法反對者".split(",")
+        self.bad_two_label="反對/攻訐,彈劾,反對/不支持Y的政策,排擠,得罪Y,忌/惡,批評,反對Y稱帝,以詩諷忤Y,與Y爭權,其黨攻訐Y,反對赦免".split(",")
+        self.bad_three_label="陷害Y,其（或追隨者）殺害Y,逮捕,鞫治,建議處決Y,籌劃謀殺,下令處決,處決,逃離Y的統治區".split(",")
         self.good_one_label="門客為Y,恩主是Y,黨羽為Y,黨魁為Y,政見趨同,副Y出使,以Y為謀士,以宦官事Y".split(",")
-        self.good_two_label="欣賞/器重,支持,喜爱,稱道Y之政績,護佑Y,擁立Y,王安石新法支持者".split(",")
+        self.good_two_label="欣賞/器重,支持,喜爱,稱道Y之政績,護佑Y,擁立Y".split(",")
         self.good_three_label="因與Y的交往受牽連,其同犯被指為Y".split(",")
         """存储分类后数据的列表"""
         self.bad_one_list=[]

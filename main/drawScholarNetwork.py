@@ -7,14 +7,14 @@ Created on 2019年1月13日
 import networkx as nx
 import matplotlib.pyplot as plt
 import main.connectToAccess as source
-from main.readScholarLabel import getScholarLabel
-from main.createGraph import createGraph
+from main.readLabel import getScholarLabel
+from main.createGraph import CreateGraph
 table=source.getData()
 scholarLabel=getScholarLabel()
 
 data=table[table[3].isin(scholarLabel)]
 
-scholarNetwork=createGraph(data)
+scholarNetwork=CreateGraph(data)
 
 
 

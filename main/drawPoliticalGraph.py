@@ -1,9 +1,8 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-from main.createGraph import createGraph
+from main.createGraph import CreateGraph
 from main.cleanData import CleanData
-
-politicalNetwork=createGraph()
+politicalNetwork=CreateGraph()
 data=CleanData()
 
 
