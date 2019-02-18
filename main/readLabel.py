@@ -19,3 +19,11 @@ def getPoliticalLable():
             politic_label.append(i.strip('\n'))
             
     return politic_label
+
+def getLable(filename):
+    label=[]
+    with open(filename,'r',encoding='UTF-8') as read:
+        for i in read:
+            label.append(i.strip('\n'))
+            
+    return label
