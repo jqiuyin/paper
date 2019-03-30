@@ -1,11 +1,11 @@
 import pypyodbc
 import pandas
 
-def getData(start=960,end=1279):
+def getData(start=960,end=1279,str='''Driver={Microsoft Access Driver (*.mdb,*.accdb)};
+         DBQ=../CBDB_ax_20180831/CBDB_20180831_DATA1.mdb'''):
 #     str='''Driver={Microsoft Access Driver (*.mdb,*.accdb)};
 #         DBQ=C:\\Users\\94357\\eclipse-workspace\\paper\\CBDB_ax_20180831\\CBDB_20180831_DATA1.mdb'''
-    str='''Driver={Microsoft Access Driver (*.mdb,*.accdb)};
-         DBQ=../CBDB_ax_20180831/CBDB_20180831_DATA1.mdb'''
+    
     db=pypyodbc.win_connect_mdb(str)
     curser=db.cursor()
     curser.execute("""select

@@ -8,7 +8,6 @@ import networkx as nx
 
 class CreateGraph(object):
     
-    
     def __init__(self,egleList=None):
         self.G=nx.Graph()
         if(not egleList is None):

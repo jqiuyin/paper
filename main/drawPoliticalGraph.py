@@ -4,23 +4,7 @@ from main.createGraph import CreateGraph
 from main.cleanData import CleanData
 politicalNetwork=CreateGraph()
 data=CleanData()
-
-
-
-bad_one=data.get_quick_table("bad_one")
-bad_two=data.get_quick_table("bad_two")
-bad_three=data.get_quick_table("bad_three")
-good_one=data.get_quick_table("good_one")
-good_two=data.get_quick_table("good_two")
-good_three=data.get_quick_table("good_three")
-
-politicalNetwork.addEgle(bad_one)
-politicalNetwork.addEgle(bad_two)
-politicalNetwork.addEgle(bad_three)
-politicalNetwork.addEgle(good_one)
-politicalNetwork.addEgle(good_two)
-politicalNetwork.addEgle(good_three)
-
+politicalNetwork=CreateGraph()
 G=politicalNetwork.getGraph()
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
