@@ -27,3 +27,7 @@ def getLable(filename):
             label.append(i.strip('\n'))
             
     return label
+
+
+if __name__=='__main__':
+    print(getScholarLabel())
