@@ -3,7 +3,9 @@ Created on 2018年11月8日
 
 @author: jiqy1
 '''
-
+'''
+根据传入标签列表筛选数据
+'''
 class CleanData(object):
     def __init__(self,label,table):
         self.table=table

@@ -5,7 +5,9 @@ Created on 2018年12月24日
 '''
 import networkx as nx
 
-
+'''
+根据传入数据创建关系图
+'''
 class CreateGraph(object):
     
     def __init__(self,egleList=None):

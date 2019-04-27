@@ -6,7 +6,9 @@ Created on 2019年1月11日
 import networkx as nx
 import pandas as pd
 
-
+'''
+获取关系图的统计信息
+'''
 class Statistic(object):
     def __init__(self,graph):
         self.G=graph

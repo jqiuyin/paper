@@ -6,7 +6,9 @@ Created on 2019年2月18日
 
 
 import networkx as nx
-
+'''
+使用matplotlib将关系图绘制到自动画布中
+'''
 class DrawNetwork(object):
     def __init__(self,ax, Graph,font_size=0.2):
         self.g=Graph

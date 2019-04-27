@@ -3,7 +3,9 @@ Created on 2019年1月13日
 
 @author: qiuyin
 '''
-
+'''
+从文件系统中读取筛选数据所需的标签
+'''
 def getScholarLabel():
     scholar_label=[]
     with open('scholar_label.txt','r',encoding='UTF-8') as read:
