@@ -116,3 +116,5 @@ dmypy.json
 
 
 CBDB_ax_20180831/
+.settings/
+.idea/
