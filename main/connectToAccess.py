@@ -5,7 +5,7 @@ import pandas
 从CBDB中获取数据
 """
 def getData(start=960,end=1279,str='''Driver={Microsoft Access Driver (*.mdb,*.accdb)};
-         DBQ=../CBDB_ax_20180831/CBDB_20180831_DATA1.mdb'''):
+         DBQ=./CBDB_ax_20180831/CBDB_20180831_DATA1.mdb'''):
 
     db=pypyodbc.win_connect_mdb(str)
     curser=db.cursor()
